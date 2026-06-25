@@ -1,0 +1,39 @@
+.footer {
+    padding: 45px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 22px;
+    flex-wrap: wrap;
+    background: #071a2b;
+    color: #fff
+}
+
+.footer nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    flex-wrap: wrap
+}
+
+.footer a {
+    color: #d9fffb;
+    font-weight: 800
+}
+
+.footer p {
+    color: #91a8b8
+}
+
+
+.footer-resultados {
+    padding: 10px 16px;
+    border-radius: 999px;
+    background: rgba(20, 184, 166, .16);
+    border: 1px solid rgba(217, 255, 251, .26);
+    color: #fff !important;
+}
+
+.footer-resultados:hover {
+    background: rgba(20, 184, 166, .28);
+}

@@ -1,0 +1,220 @@
+.sobre {
+    position: relative;
+    overflow: hidden;
+}
+
+.sobre::before {
+    content: "";
+    position: absolute;
+    inset: 80px 5% auto;
+    height: 100%;
+    max-height: 1650px;
+    border-radius: 48px;
+    background:
+        radial-gradient(circle at 18% 22%, rgba(20, 184, 166, .18), transparent 30%),
+        linear-gradient(135deg, rgba(255,255,255,.92), rgba(224,247,245,.72));
+    border: 1px solid rgba(217, 239, 237, .9);
+    z-index: -1;
+}
+
+.sobre-intro {
+    display: grid;
+    grid-template-columns: minmax(300px, 440px) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(28px, 5vw, 72px);
+    margin-bottom: 46px;
+}
+
+.sobre .section-heading {
+    max-width: 760px;
+    margin: 0;
+    text-align: right;
+    justify-self: end;
+}
+
+.sobre .section-heading span {
+    background: rgba(15, 118, 110, .10);
+    color: var(--primary);
+}
+
+.sobre .section-heading h1 {
+    color: var(--text);
+    font-size: 65px;
+}
+
+.sobre .section-heading h2 {
+    color: var(--primary);
+    font-size: 32px;
+    line-height: 1.18;
+}
+
+.sobre .section-heading h3 {
+    color: #48677a;
+    font-size: 20px;
+}
+
+.sobre-image-card {
+    position: relative;
+    min-height: 460px;
+    display: grid;
+    place-items: center;
+}
+
+.sobre-image-glow {
+    position: absolute;
+    width: 82%;
+    aspect-ratio: 1;
+    border-radius: 42% 58% 48% 52% / 48% 40% 60% 52%;
+    background: linear-gradient(135deg, rgba(15, 118, 110, .22), rgba(20, 184, 166, .10));
+    filter: blur(1px);
+}
+
+.sobre-image-frame {
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: end center;
+    padding: 34px 28px 0;
+    border-radius: 42px;
+    background:
+        linear-gradient(180deg, rgba(255,255,255,.96), rgba(224,247,245,.78)),
+        radial-gradient(circle at top, rgba(20,184,166,.22), transparent 48%);
+    border: 1px solid rgba(255,255,255,.92);
+    box-shadow: 0 34px 90px rgba(15, 118, 110, .18);
+    overflow: hidden;
+}
+
+.sobre-image-frame::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    right: 26px;
+    width: 86px;
+    height: 86px;
+    border-radius: 28px;
+    background: rgba(15, 118, 110, .08);
+}
+
+.sobre-image-frame::after {
+    content: "";
+    position: absolute;
+    left: -38px;
+    bottom: -38px;
+    width: 150px;
+    height: 150px;
+    border-radius: 999px;
+    background: rgba(20, 184, 166, .13);
+}
+
+.sobre-image-frame img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    bottom: 20px;
+    border-radius: 40px;
+    object-fit: cover;
+    filter: drop-shadow(0 22px 30px rgba(16, 42, 67, .18));
+}
+
+.sobre-floating-card {
+    position: absolute;
+    z-index: 4;
+    width: max-content;
+    max-width: 210px;
+    padding: 14px 16px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .92);
+    border: 1px solid rgba(217, 239, 237, .95);
+    box-shadow: 0 22px 55px rgba(16, 42, 67, .12);
+}
+
+.sobre-floating-card strong {
+    display: block;
+    color: var(--primary);
+    font-size: 1rem;
+}
+
+.sobre-floating-card span {
+    color: var(--muted);
+    font-size: .82rem;
+    font-weight: 700;
+}
+
+.sobre-floating-card-top {
+    top: 42px;
+    right: -8px;
+}
+
+.sobre-floating-card-bottom {
+    left: -8px;
+    bottom: 48px;
+}
+
+.mini-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 14px;
+    margin: 40px 0;
+}
+
+.mini-cards article {
+    min-height: 92px;
+    display: flex;
+    align-items: center;
+    padding: 18px;
+    border-radius: 22px;
+    background: rgba(255, 255, 255, .92);
+    font-weight: 900;
+    color: var(--primary);
+    border: 1px solid var(--line);
+    box-shadow: 0 18px 40px rgba(15, 118, 110, .08);
+}
+
+.sobre-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.info-card {
+    background: rgba(255, 255, 255, .95);
+    border-radius: var(--radius);
+    padding: 28px;
+    border: 1px solid var(--line);
+    box-shadow: var(--shadow);
+}
+
+.info-card h3 {
+    font-size: 1.35rem;
+    margin-bottom: 16px;
+    color: var(--primary);
+}
+
+.info-card p {
+    display: flex;
+    gap: 10px;
+    line-height: 1.7;
+    color: #48677a;
+    margin-bottom: 10px;
+}
+
+.info-card img {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 4px;
+}
+
+.quote-card {
+    background: #102a43;
+    color: #fff;
+}
+
+.quote-card h3,
+.quote-card p {
+    color: #fff;
+}
