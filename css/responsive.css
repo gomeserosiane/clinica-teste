@@ -279,3 +279,20 @@
     gap: 12px;
   }
 }
+/* Ajuste da seção Sobre: 2 cards no topo e mensagem em largura total */
+@media (max-width: 768px) {
+  .sobre-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+
+  .info-row {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .info-row-full .info-card {
+    min-height: auto;
+  }
+}

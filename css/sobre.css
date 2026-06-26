@@ -174,10 +174,26 @@
 }
 
 .sobre-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     padding: 20px;
+}
+
+.info-row {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+.info-row-full {
+    width: 100%;
+}
+
+.info-row-full .info-card {
+    width: 100%;
+    min-height: 220px;
 }
 
 .info-card {
