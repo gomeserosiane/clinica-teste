@@ -1,19 +1,22 @@
 .footer {
     padding: 45px 7%;
+    background: #071a2b;
+    color: #fff
+}
+
+.footer-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 22px;
     flex-wrap: wrap;
-    background: #071a2b;
-    color: #fff
 }
 
 .footer nav {
     display: flex;
     align-items: center;
     gap: 18px;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .footer a {
@@ -25,7 +28,6 @@
     color: #91a8b8
 }
 
-
 .footer-resultados {
     padding: 10px 16px;
     border-radius: 999px;
@@ -36,4 +38,16 @@
 
 .footer-resultados:hover {
     background: rgba(20, 184, 166, .28);
+}
+
+.footer-dev {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid #91a8b8;
+    margin-top: 40px;
+}
+
+.footer-dev p {
+    margin-top: 40px;
 }

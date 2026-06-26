@@ -1,325 +1,175 @@
-@media(max-width:1180px) {
+@media (max-width: 768px) {
 
-  .services-grid,
-  .testimonials-grid {
-    grid-template-columns: repeat(2, 1fr)
+  body {
+    overflow-x: hidden;
   }
 
-  .testimonials-shell {
-    grid-template-columns: 1fr
-  }
-
-  .sobre-grid {
-    grid-template-columns: 1fr
-  }
-
-  .mini-cards {
-    grid-template-columns: repeat(2, 1fr)
-  }
-}
-
-@media(max-width:900px) {
-  .header {
-    border-radius: 26px
-  }
-
-  .menu-toggle {
-    display: block
-  }
-
-  .nav {
-    position: absolute;
-    top: 78px;
-    left: 0;
-    width: 100%;
-    display: none;
-    flex-direction: column;
-    background: white;
-    padding: 24px;
-    border-radius: 24px;
-    box-shadow: var(--shadow)
-  }
-
-  .nav.active {
-    display: flex
-  }
-
-  .header-cta {
-    display: none
-  }
-
-  .hero,
-  .contact-card {
-    grid-template-columns: 1fr
-  }
-
-  .hero {
-    padding-top: 130px
-  }
-
-  .hero-card {
-    order: 2
-  }
-
-  
   .section {
-    padding: 85px 5%
+    padding: 80px 5%;
   }
 
-  .hero-stats {
-    grid-template-columns: 1fr
-  }
-
-  .footer {
-    align-items: flex-start;
-    flex-direction: column
-  }
-}
-
-@media(max-width:620px) {
-  .services-grid,
-  .testimonials-grid,
-  .mini-cards,
-  .trust-row {
-    grid-template-columns: 1fr
-  }
-
-  .service-tabs {
-    justify-content: flex-start;
-    overflow-x: auto;
-    flex-wrap: nowrap;
-    padding-bottom: 8px
-  }
-
-  .tab-btn {
-    white-space: nowrap
-  }
-
-  .contact-card,
-  .testimonial-highlight {
-    padding: 28px
-  }
-
-  .whatsapp-box {
-    width: calc(100vw - 40px)
-  }
-
-  .section-heading {
-    text-align: left
-  }
-
-  .floating-note {
-    display: none
-  }
-}
-
-@media(max-width:420px) {
-  .testimonial-card {
-    padding: 22px
-  }
-
-  .testimonial-person {
-    align-items: flex-start
-  }
-
-  .quote-icon {
-    width: 52px;
-    height: 52px;
-    font-size: 3.4rem
-  }
-}
-
-@media(max-width:1180px) {
-  .address-grid {
-    grid-template-columns: 1fr
-  }
-}
-
-@media(max-width:900px) {
   .header {
     top: 12px;
-    width: calc(100% - 24px);
-    min-height: 70px;
-    padding: 9px 12px;
-    border-radius: 24px
-  }
-
-  .logo img {
-    width: 50px;
-    height: 50px
-  }
-
-  .logo span strong {
-    font-size: .95rem
-  }
-
-  .nav {
-    top: 82px
-  }
-
-  .address-grid {
-    gap: 22px
-  }
-
-  .map-frame,
-  .map-frame iframe {
-    height: 320px;
-    min-height: 320px
-  }
-}
-
-@media(max-width:620px) {
-  .address-card {
-    padding: 16px;
-    border-radius: 26px
-  }
-
-  .address-card-header {
-    padding: 8px 6px 14px
-  }
-
-  .map-frame,
-  .map-frame iframe {
-    height: 290px;
-    min-height: 290px
-  }
-
-  .address-whatsapp {
-    border-radius: 20px;
-    text-align: center
-  }
-}
-
-@media(max-width:420px) {
-  .header {
-    width: calc(100% - 18px)
-  }
-
-  .logo small {
-    display: none
-  }
-
-  .logo img {
-    width: 46px;
-    height: 46px
-  }
-
-  .menu-toggle {
-    padding: 10px
-  }
-
-  .map-frame,
-  .map-frame iframe {
-    height: 250px;
-    min-height: 250px
-  }
-}
-
-
-@media(max-width:1180px) {
-  .sobre-intro {
-    grid-template-columns: 1fr;
-    gap: 34px
-  }
-
-  .sobre .section-heading {
-    text-align: center;
-    justify-self: center;
-    max-width: 900px
-  }
-
-  .sobre-image-card {
-    min-height: 420px
-  }
-
-  .sobre-floating-card-top {
-    right: 8%
-  }
-
-  .sobre-floating-card-bottom {
-    left: 8%
-  }
-}
-
-@media(max-width:1020px) {
-  .header {
-    top: 14px;
-    width: calc(100vw - 24px);
-    max-width: calc(100vw - 24px);
+    left: 12px;
+    right: 12px;
+    width: auto;
+    max-width: none;
     min-height: 72px;
-    padding: 9px 12px;
-    border-radius: 28px;
+    padding: 10px 14px;
+    border-radius: 24px;
+    transform: none;
     justify-content: space-between;
   }
 
   .logo img {
-    width: 50px;
-    height: 50px
+    width: 48px;
+    height: 48px;
   }
 
   .logo span strong {
-    font-size: .94rem
+    font-size: .95rem;
   }
 
   .logo small {
-    font-size: .68rem
+    display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
   }
 
   .nav {
-    gap: 14px
-  }
-
-  .header-cta {
-    padding: 12px 14px;
-    font-size: .9rem
-  }
-}
-
-@media(max-width:900px) {
-  .header {
-    left: 12px;
-    right: 12px;
-    transform: none;
-    width: auto;
-    max-width: none
-  }
-
-  .nav {
-    top: 82px;
+    position: absolute;
+    top: 84px;
     left: 0;
     right: 0;
     width: 100%;
-    z-index: 1001
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    background: #fff;
+    padding: 24px;
+    border-radius: 24px;
+    box-shadow: var(--shadow);
+    z-index: 1001;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .header-actions,
+  .header-cta {
+    display: none;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    padding-top: 130px;
+    gap: 36px;
+  }
+
+  .hero-card {
+    order: 2;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.2rem, 8vw, 3.4rem);
+    line-height: 1.05;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 375px;
+  }
+
+  .scan-panel {
+    width: 100%;
+    max-width: 375px;
+}
+
+  .resultados-online {
+    padding: 0 5% 32px;
+    margin-top: -18px;
+  }
+
+  .resultados-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 22px;
+    padding: 26px 22px;
+    border-radius: 26px;
+  }
+
+  .resultados-copy h2 {
+    font-size: 1.45rem;
+    text-transform: none;
+  }
+
+  .resultados-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .sobre-intro,
+  .sobre-grid,
+  .contact-card,
+  .testimonials-shell,
+  .address-grid {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .sobre .section-heading {
+    text-align: left;
+    max-width: 100%;
   }
 
   .sobre::before {
     inset: 70px 4% auto;
-    height: 620px;
-    border-radius: 34px
+    height: 100%;
+    max-height: 4080px;
+    border-radius: 34px;
   }
+
+  .sobre .section-heading h1 {
+    font-size: 40px;
+    font-weight: bold;
 }
 
-@media(max-width:620px) {
-  .sobre-intro {
-    gap: 24px
-  }
+.sobre .section-heading h2 {
+    font-size: 28px;
+}
 
-  .sobre .section-heading {
-    text-align: left
-  }
+.sobre .section-heading h3 {
+    font-size: 18px;
+}
 
   .sobre-image-card {
-    min-height: 360px
+    display: block;
+    min-height: auto;
   }
 
   .sobre-image-frame {
     width: 100%;
-    min-height: 340px;
-    border-radius: 32px
+    min-height: 400px;
+    border-radius: 30px;
   }
 
   .sobre-image-frame img {
-    max-height: 280px
+    width: 100%;
+    max-height: 400px;
+    border-radius: 30px;
+    object-fit: contain;
   }
 
   .sobre-floating-card {
@@ -327,88 +177,106 @@
     inset: auto;
     width: 100%;
     max-width: none;
-    margin-top: 10px
+    margin-top: 12px;
   }
 
-  .sobre-image-card {
-    display: block
+  .sobre-image-glow,
+  .floating-note {
+    display: none;
   }
 
-  .sobre-image-glow {
-    display: none
+  .mini-cards,
+  .services-grid,
+  .testimonials-grid,
+  .trust-row {
+    grid-template-columns: 1fr;
   }
 
-  .mini-cards {
-    padding: 0
+  .service-tabs {
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
   }
 
-  .sobre-grid {
-    padding: 0
+  .tab-btn {
+    white-space: nowrap;
+    flex: 0 0 auto;
   }
+
+  .service-card img {
+    height: 220px;
+    object-fit: cover;
+  }
+
+  .service-btn {
+    height: 50px;
+    gap: 15px;
+}
+  .service-btn img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .testimonial-card,
+  .testimonial-highlight,
+  .contact-card,
+  .address-card {
+    padding: 24px;
+    border-radius: 26px;
+  }
+
+  .testimonial-person {
+    align-items: flex-start;
+  }
+
+  .quote-icon {
+    width: 54px;
+    height: 54px;
+    font-size: 3.4rem;
+  }
+
+  .map-frame,
+  .map-frame iframe {
+    height: 300px;
+    min-height: 300px;
+  }
+
+  .address-card-header {
+    padding: 8px 4px 14px;
+  }
+
+  .address-whatsapp {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+  }
+
+  .whatsapp-box {
+    right: 20px;
+    width: calc(100vw - 40px);
+  }
+
+  .whatsapp-float {
+    width: 58px;
+    height: 58px;
 }
 
-
-@media(max-width:1180px) {
-  .header-actions {
-    gap: 8px
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 30px;
   }
 
-  .header-cta {
-    padding: 11px 12px;
-    font-size: .82rem
-  }
-
-  .resultados-container {
-    padding: 28px;
-  }
-}
-
-@media(max-width:1020px) {
-  .header {
-    left: 50%;
-    right: auto;
-    transform: translateX(-50%);
-    width: calc(100vw - 24px);
-    max-width: calc(100vw - 24px)
-  }
-
-  .header-actions {
-    display: none
-  }
-}
-
-@media(max-width:900px) {
-  .header {
-    left: 12px;
-    right: 12px;
-    transform: none;
-    width: auto;
-    max-width: none;
-    justify-content: space-between
-  }
-
-  .resultados-online {
-    padding: 0 5% 28px;
-    margin-top: -18px
-  }
-
-  .resultados-container {
+  .footer nav,
+  .footer-links,
+  .footer-menu {
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
-    border-radius: 26px
-  }
-
-  .resultados-btn {
-    width: 100%
-  }
-}
-
-@media(max-width:620px) {
-  .resultados-container {
-    padding: 24px 20px
-  }
-
-  .resultados-copy h2 {
-    text-transform: none
+    gap: 12px;
   }
 }

@@ -1,6 +1,6 @@
 .header {
     position: fixed;
-    top: 18px;
+    top: 10px;
     left: 50%;
     right: auto;
     transform: translateX(-50%);
